@@ -1,5 +1,5 @@
 {
-  "name": "@fwi-be-common/documentation-generator",
+  "name": "tsoa-serverless",
   "version": "1.1.2",
   "description": "Command for generating documentation",
   "main": "lib/index.js",
@@ -11,11 +11,7 @@
     "format": "prettier ./src/**/*.ts --write",
     "test": "mocha -r ts-node/register __tests__/**"
   },
-  "publishConfig": {
-    "registry": "https://artifactory.fourwindsinteractive.com/api/npm/fwi-npm-local"
-  },
   "dependencies": {
-    "@fwi-be-common/helper-utils": "file:../helper-utils",
     "@hapi/joi": "^16.1.7",
     "colors": "^1.4.0",
     "js-yaml": "^3.13.1",
@@ -27,5 +23,22 @@
   },
   "files": [
     "lib/*"
-  ]
+  ],
+  "devDependencies": {
+    "@types/hapi__joi": "^16.0.3",
+    "@types/js-yaml": "^3.12.1",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.14",
+    "@types/prettier": "^1.19.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-no-focused-test": "^0.5.0",
+    "tslint-no-unused-expression-chai": "^0.1.4",
+    "typescript": "^3.7.2"
+  }
 }

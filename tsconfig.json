@@ -1,8 +1,30 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "lib": ["es2016", "dom"],
     "rootDir": "./src",
-    "outDir": "./lib"
+    "outDir": "./lib",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
   },
-  "exclude": ["lib", "node_modules", "__tests__"]
+  "exclude": [
+    "lib",
+    "__tests__",
+    "node_modules",
+    "lib",
+    "src/**/__tests__/*.ts"
+  ]
 }
