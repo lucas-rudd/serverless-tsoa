@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as yaml from 'js-yaml';
-import { deepRemoveKey } from '@fwi-be-common/helper-utils';
+import { deepRemoveKey } from '../utils/objectUtilities';
 import { SwaggerDefinition, SwaggerModelDefinition } from '../models';
 import { DEFAULT_MODEL_DEFINITION } from '../constants';
 

@@ -1,4 +1,4 @@
-import { Union } from '@fwi-be-common/helper-utils';
+import { Union } from '../utils/typeguardUtilities';
 
 export interface SwaggerDefinition {
   components: {
