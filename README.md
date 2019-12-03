@@ -16,7 +16,7 @@ When `tsoa` generates swagger docs, it analyzes the handlers annotated with the 
 
 ### Usage
 
-To use this tool, simply install `@fwi-be-common/documentation-generator` either locally or globally, and run `$(yarn bin)/document`, or `document` respectively. You must have a `tsoa.json` file in each directory for the API you want documentation for in order for documentation to get generated for that handler.
+To use this tool, simply install `serverless-tsoa` either locally or globally, and run `$(yarn bin)/document`, or `document` respectively. You must have a `tsoa.json` file in each directory for the API you want documentation for in order for documentation to get generated for that handler.
 
 Documentation generates individual serverless-aws-documentation compliant swagger docs in the handler directory, which can then be referenced in your serverless configuration. It also creates an OpenAPI 3.0 compliant swagger doc (with no transformations done) in the output directory specified.
 
