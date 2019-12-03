@@ -1,0 +1,31 @@
+{
+  "name": "@fwi-be-common/documentation-generator",
+  "version": "1.1.2",
+  "description": "Command for generating documentation",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "tslint './src/**/*.ts' --project tsconfig.json",
+    "clean": "rimraf ./lib",
+    "prepublish": "yarn run build",
+    "build": "yarn run clean && tsc",
+    "format": "prettier ./src/**/*.ts --write",
+    "test": "mocha -r ts-node/register __tests__/**"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.fourwindsinteractive.com/api/npm/fwi-npm-local"
+  },
+  "dependencies": {
+    "@fwi-be-common/helper-utils": "file:../helper-utils",
+    "@hapi/joi": "^16.1.7",
+    "colors": "^1.4.0",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "tsoa": "^2.5.9"
+  },
+  "bin": {
+    "document": "lib/cli.js"
+  },
+  "files": [
+    "lib/*"
+  ]
+}
