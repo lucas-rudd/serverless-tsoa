@@ -56,3 +56,7 @@ but, this is:
 schema:
   $ref: '#/components/schemas/ResponseObject'
 ```
+
+### Example Project
+
+An example project utilizing this utility to auto-generate documentation for an AWS serverless project can be found [here](https://github.com/lucas-rudd/poker-display/tree/master/poker-api)
