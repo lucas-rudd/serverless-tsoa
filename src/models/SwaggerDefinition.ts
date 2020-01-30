@@ -1,4 +1,4 @@
-import { Union } from '../utils/typeguardUtilities';
+import { Union } from "../utils/typeguardUtilities";
 
 export interface SwaggerDefinition {
   components: {
@@ -11,7 +11,7 @@ export interface SwaggerDefinition {
   };
   paths: object;
   produces: string[];
-  swagger: '2.0';
+  swagger: "2.0";
   securityDefinitions: object;
   basePath: string;
   consumes: string[];
@@ -22,19 +22,19 @@ export interface SwaggerDefinition {
 }
 
 export const ContentTypes = Union(
-  'text/plain',
-  'text/html',
-  'application/octet-stream',
-  'application/json',
-  'application/pdf',
-  'image/png',
-  'image/jpeg',
-  'image/gif'
+  "text/plain",
+  "text/html",
+  "application/octet-stream",
+  "application/json",
+  "application/pdf",
+  "image/png",
+  "image/jpeg",
+  "image/gif"
 );
 export type ContentTypes = typeof ContentTypes.type;
 
 export interface SwaggerModelSchemaProperty {
-  type?: 'string' | 'array';
+  type?: "string" | "array";
   items?: {
     $ref: string;
   };
@@ -48,5 +48,5 @@ export interface SwaggerModelDefinition {
   name: string;
   contentType: ContentTypes;
   schema: SwaggerModelSchemaDefinition;
-  type: 'object' | 'array';
+  type: "object" | "array";
 }

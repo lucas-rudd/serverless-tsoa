@@ -1,9 +1,13 @@
-import { SwaggerDefinition, CommandLineFlags, SwaggerModelDefinition } from '../models';
+import {
+  SwaggerDefinition,
+  CommandLineFlags,
+  SwaggerModelDefinition
+} from "../models";
 
 export const DEFAULT_CONFIG: CommandLineFlags = {
-  srcDir: './',
-  outDir: './docs',
-  config: './',
+  srcDir: "./",
+  outDir: "./docs",
+  config: "./"
 };
 
 export const DEFAULT_SWAGGER_DEFINITION: SwaggerDefinition = {
@@ -13,27 +17,27 @@ export const DEFAULT_SWAGGER_DEFINITION: SwaggerDefinition = {
     parameters: {},
     requestBodies: {},
     responses: {},
-    schemas: {},
+    schemas: {}
   },
   paths: {},
-  produces: ['application/json'],
-  swagger: '2.0',
+  produces: ["application/json"],
+  swagger: "2.0",
   securityDefinitions: {},
-  basePath: '/labels',
-  consumes: ['application/json'],
+  basePath: "/labels",
+  consumes: ["application/json"],
   info: {
-    title: 'label-service',
+    title: "label-service"
   },
-  definitions: {},
+  definitions: {}
 };
 
 export const DEFAULT_MODEL_DEFINITION: SwaggerModelDefinition = {
-  name: '',
-  contentType: 'application/json',
+  name: "",
+  contentType: "application/json",
   schema: {
-    properties: {},
+    properties: {}
   },
-  type: 'object',
+  type: "object"
 };
 
-export const SUPPORTED_EXTENSIONS = ['json', 'yml', 'yaml', 'js'];
+export const SUPPORTED_EXTENSIONS = ["json", "yml", "yaml", "js"];
