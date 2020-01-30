@@ -22,7 +22,6 @@ const errors: Error[] = [];
 const warnings: Warning[] = [];
 const childProcesses: any = [];
 
-console.log("USING SERVERLESS TSOA");
 const generateChildProcessPromise = (childProcesses: ChildProcess) =>
   new Promise((resolve, reject) => {
     childProcesses.on("message", ({ warnings: processWarnings, error }) => {
