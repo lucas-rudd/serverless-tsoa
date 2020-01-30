@@ -1,6 +1,6 @@
 {
   "name": "tsoa-serverless",
-  "version": "1.1.2",
+  "version": "1.0.0",
   "description": "Command for generating documentation",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "colors": "^1.4.0",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
+    "proper-lockfile": "^4.1.1",
     "tsoa": "^2.5.9"
   },
   "bin": {
@@ -31,6 +32,7 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.12.14",
     "@types/prettier": "^1.19.0",
+    "@types/proper-lockfile": "^4.1.1",
     "mocha": "^6.2.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
