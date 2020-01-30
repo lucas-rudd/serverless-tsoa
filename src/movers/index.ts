@@ -1,1 +1,1 @@
-export * from './moveModels';
+export * from "./moveModels";

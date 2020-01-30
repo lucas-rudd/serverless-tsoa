@@ -1,1 +1,1 @@
-export * from './commandLineArgumentSchema';
+export * from "./commandLineArgumentSchema";

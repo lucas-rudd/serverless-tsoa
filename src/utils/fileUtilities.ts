@@ -1,5 +1,5 @@
-import * as util from 'util';
-import * as fs from 'fs';
+import * as util from "util";
+import * as fs from "fs";
 
 const fsUnlink = util.promisify(fs.unlink);
 const fsMkdir = util.promisify(fs.mkdir);
