@@ -1,1 +1,1 @@
-export * from './serverlessAwsDocumentationAdaptor';
+export * from "./serverlessAwsDocumentationAdaptor";
