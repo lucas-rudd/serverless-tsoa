@@ -1,4 +1,4 @@
-# Deprecated: This project has been deprecated. The suggested way to integrate Serverless projects with tsoa is through the [serverless-express](https://serverless.com/plugins/serverless-express/) plugin. Although the project still has some utility in converting Swagger to a format compliant with [serverless-aws-documentation plugin](https://github.com/deliveryhero/serverless-aws-documentation), it will not stay maintained in its current form.
+# Deprecated: The suggested way to integrate Serverless projects with tsoa is through the [serverless-express](https://serverless.com/plugins/serverless-express/) plugin. Although the project still has some utility in converting Swagger to a format compliant with [serverless-aws-documentation plugin](https://github.com/deliveryhero/serverless-aws-documentation), it will not stay maintained in its current form.
 
 ## Documentation Generator
 
